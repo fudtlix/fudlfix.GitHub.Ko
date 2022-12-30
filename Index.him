@@ -1,1 +1,66 @@
- christian white
+
+<html>
+  <head>
+    <title>My Streaming Service</title>
+    <style>
+      /* Add some styling for the website */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      .show {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+      }
+      .show img {
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+        margin-right: 20px;
+      }
+      .show .details {
+        flex: 1;
+      }
+      .show .details h2 {
+        margin: 0;
+      }
+      .show .details p {
+        margin: 0;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Streaming Service</h1>
+    <div id="shows">
+      <!-- Shows will be added here dynamically with JavaScript -->
+    </div>
+    <script>
+      // Add shows to the page
+      const shows = [
+        {
+          title: 'Game of Thrones',
+          description: 'In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.',
+          image: 'https://image.tmdb.org/t/p/w500/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg'
+        },
+        {
+          title: 'Stranger Things',
+          description: 'When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces in order to get him back.',
+          image: 'https://image.tmdb.org/t/p/w500/x2Lk3KsH1n5L3Yt3c8KUcPw5b5f.jpg'
+        },
+        {
+          title: 'Breaking Bad',
+          description: 'A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family\'s future.',
+          image: 'https://image.tmdb.org/t/p/w500/1yeVJox3rjo2jBKrrihIMj7uoS9.jpg'
+        },
+        {
+          title: 'The Sopranos',
+          description: 'New Jersey mob boss, Tony Soprano, deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling.',
+          image: 'https://image.tmdb.org/t/p/w500/uX7LXnsC7bZJZjn048UCOwkPXWJ.jpg'
+        },
+        {
+          title: 'The Office',
+          description: 'A mockumentary on a group of typical office workers, where the workday consists
